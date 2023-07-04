@@ -1,6 +1,5 @@
 ''' Create a dashboard
 by Rodrigo Celis López
-
 '''
 # Llamamos las librerias:
 import pandas as pd
