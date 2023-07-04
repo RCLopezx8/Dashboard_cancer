@@ -23,8 +23,6 @@ Una vez esté pip instalado, ejecuta los siguientes comandos en la Terminal uno 
 
    pip install streamlit
 
-   Para instalar pmdarima:
-
    pip install pmdarima
 
    pip install plotly
@@ -57,8 +55,6 @@ Once pip is installed, execute the following commands one by one in the Terminal
    pip install pandas
 
    pip install streamlit
-
-   To install pmdarima:
 
    pip install pmdarima
 
