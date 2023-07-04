@@ -1,6 +1,7 @@
 ''' Create a dashboard
 by Rodrigo Celis López
 '''
+# Aquí empieza el código...
 # Llamamos las librerias:
 import pandas as pd
 import streamlit as st
@@ -171,7 +172,7 @@ def create_cleveland_plot(ruta_archivo, region_column, x_column, y_column, x_lab
     fig.add_trace(go.Scatter(x=y_values, y=list(range(len(regiones))), mode='markers', marker=dict(color='blue'), name=y_column))
 
     # Los ejes
-    fig.update_xaxes(title=x_label)
+    #fig.update_xaxes(title=x_label)
     fig.update_layout(title=title)
 
     # Mostrar el gráfico con Streamlit
@@ -181,7 +182,7 @@ def main():
     # Ruta al archivo TSV con los datos
     ruta_archivo = "Distribucion/Distribución_porcentual_fallecidos_menores_80_años_tasa_AVPP_tipo_cáncer_sexo.tsv"
 
-    create_cleveland_plot(ruta_archivo, "Tipo de cáncer", "Fallecidos cualquier edad hombres", "Fallecidos cualquier edad mujeres", "Fallecidos cualquier edad", "Resumen de fallecidos por tipo de cáncer")
+    create_cleveland_plot(ruta_archivo, "Tipo de cáncer", "Fallecidos cualquier edad hombres", "Fallecidos cualquier edad mujeres", "Fallecidos cualquier edad hombres", "Resumen de fallecidos por tipo de cáncer")
 
 if __name__ == "__main__":
     main()
@@ -211,7 +212,7 @@ def create_cleveland_plot(ruta_archivo, region_column, x_column, y_column, x_lab
     fig.add_trace(go.Scatter(x=y_values, y=list(range(len(regiones))), mode='markers', marker=dict(color='blue'), name=y_column))
 
     # Etiquetas de los ejes
-    fig.update_xaxes(title=x_label)
+    #fig.update_xaxes(title=x_label)
     fig.update_layout(title=title)
 
     # Mostrar el gráfico con Streamlit
@@ -221,7 +222,8 @@ def main():
     # Ruta al archivo TSV con los datos
     ruta_archivo = "Distribucion/Distribución_porcentual_fallecidos_menores_80_años_tasa_AVPP_región_residencia_sexo.tsv"
 
-    create_cleveland_plot(ruta_archivo, "Región residencia", "Fallecidos cualquier edad hombres", "Fallecidos cualquier edad mujeres", "Fallecidos cualquier edad", "Resumen fallecimientos por Región de residencia")
+    create_cleveland_plot(ruta_archivo, "Región residencia", "Fallecidos cualquier edad hombres", "Fallecidos cualquier edad mujeres", "Fallecidos cualquier edad hombres", "Resumen fallecimientos por Región de residencia")
 
 if __name__ == "__main__":
     main()
+
