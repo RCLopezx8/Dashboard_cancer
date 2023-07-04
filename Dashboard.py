@@ -182,7 +182,7 @@ def create_cleveland_plot(ruta_archivo, region_column, x_column, y_column, x_lab
 
 def main():
     # Ruta al archivo TSV con los datos
-    ruta_archivo = "/home/rodrigo/Universidad_ultimo_semestre/bioinfo_biomedica/Proyecto/cancer/super_carpeta/Distribucion/Distribución_porcentual_fallecidos_menores_80_años_tasa_AVPP_tipo_cáncer_sexo.tsv"
+    ruta_archivo = "Distribucion/Distribución_porcentual_fallecidos_menores_80_años_tasa_AVPP_tipo_cáncer_sexo.tsv"
 
     create_cleveland_plot(ruta_archivo, "Tipo de cáncer", "Fallecidos cualquier edad hombres", "Fallecidos cualquier edad mujeres", "Fallecidos cualquier edad", "Resumen de fallecidos por tipo de cáncer")
 
@@ -222,7 +222,7 @@ def create_cleveland_plot(ruta_archivo, region_column, x_column, y_column, x_lab
 
 def main():
     # Ruta al archivo TSV con los datos
-    ruta_archivo = "/home/rodrigo/Universidad_ultimo_semestre/bioinfo_biomedica/Proyecto/cancer/super_carpeta/Distribucion/Distribución_porcentual_fallecidos_menores_80_años_tasa_AVPP_región_residencia_sexo.tsv"
+    ruta_archivo = "Distribucion/Distribución_porcentual_fallecidos_menores_80_años_tasa_AVPP_región_residencia_sexo.tsv"
 
     create_cleveland_plot(ruta_archivo, "Región residencia", "Fallecidos cualquier edad hombres", "Fallecidos cualquier edad mujeres", "Fallecidos cualquier edad", "Resumen fallecimientos por Región de residencia")
 
