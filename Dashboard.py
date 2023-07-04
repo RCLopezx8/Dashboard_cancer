@@ -1,9 +1,7 @@
-''' Creador de dashboard
+''' Create a dashboard
 by Rodrigo Celis López
 
 '''
-
-# Aquí empieza el código:
 # Llamamos las librerias:
 import pandas as pd
 import streamlit as st
